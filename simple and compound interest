@@ -1,0 +1,28 @@
+var Sa; // simple Total amount,, Principal + Interest
+var Si; // simple interest
+var Ca; // compound total amoutn
+var Ci; // compound interest
+var P; //principal
+var r; //rate
+var t; //number of time periodsn aka years
+var n; //number of times interest applied per time period aka annual, semi-annual, quarterly
+
+
+Given:
+P = 10000
+r = .12
+t = 5
+n = 4
+
+// Simple Interest
+Si = P*r*t
+Sa = P + (P*r*t)
+
+// Compound Interest
+Ci = P*(((1+r/n)**(n*t))-1)
+Ca = P+(P*(((1+r/n)**(n*t))-1))
+
+console.log(Si)
+console.log(Sa)
+console.log(Ci)
+console.log(Ca)
